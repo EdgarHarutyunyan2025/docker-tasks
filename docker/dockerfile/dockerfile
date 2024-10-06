@@ -1,0 +1,10 @@
+FROM ubuntu:22.04
+LABEL autor=Edgar
+RUN apt-get update
+RUN apt-get install nginx -y
+EXPOSE 80
+EXPOSE 443/tcp
+#ENTRYPOINT ["echo","hello my docker"]
+#CMD ["sh","-c","ls | grep bin"]
+#ENTRYPOINT ["echo"]
+CMD ["nginx","-g","daemon off;"]
