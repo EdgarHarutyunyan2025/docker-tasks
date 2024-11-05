@@ -1,0 +1,5 @@
+FROM nginx/nginx-ingress-operator
+WORKDIR /app
+COPY . .
+EXPOSE 9113
+CMD ["nginx","-g","daemon off;"]

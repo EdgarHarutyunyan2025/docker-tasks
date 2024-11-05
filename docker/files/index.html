@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Веб-Сайт</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Стили (если есть) -->
+    <script src="script.js" defer></script> <!-- Подключение JavaScript -->
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Главная</h2>
+            <p>Это главная страница нашего сайта.</p>
+            <img src="image.jpg" alt="Пример изображения" class="responsive">
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Здесь будет информация о нас.</p>
+        </section>
+
+        <section id="services">
+            <h2>Услуги</h2>
+            <p>Описание предоставляемых услуг.</p>
+            <button id="contactBtn">Связаться с нами</button>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Как с нами связаться.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мой Веб-Сайт. Все права защищены.</p>
+    </footer>
+
+    <!-- Модальное окно для контактов -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Контактная форма</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

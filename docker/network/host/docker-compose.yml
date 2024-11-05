@@ -1,0 +1,17 @@
+services: 
+  web:
+    build: ./web
+    networks:
+      mynet1:
+    ports: 
+      - "80:80"
+    volumes:
+      - ./web/index.html:/usr/share/nginx/html/index.html
+      - ./web/style.css:/usr/share/nginx/html/style.scc
+  app:
+    build: ./app    
+    volumes:
+      - ./app:/app
+networks:
+  mynet1:
+    driver: bridge
